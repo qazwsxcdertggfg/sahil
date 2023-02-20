@@ -1,4 +1,4 @@
-name: "Terraform1"
+name: "Terraform"
 
 on:
   push:
