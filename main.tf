@@ -1,4 +1,4 @@
-/*terraform {
+terraform {
   backend "remote" {
     hostname = "app.terraform.io"
     organization = "Sahil123"
@@ -7,9 +7,9 @@
     }
     
   }
-}*/
+}
   
-terraform {
+/*terraform {
   backend "s3" {
     bucket = "azure-devops-roche-bucket"
     key = "main"
@@ -17,7 +17,7 @@ terraform {
     dynamodb_table = "Roche_Dynamo_Db_Table"
     
   }
-}
+}*/
   
   terraform {
   required_providers {
