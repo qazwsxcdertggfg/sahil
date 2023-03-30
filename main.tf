@@ -1,10 +1,20 @@
-terraform {
+/*terraform {
   backend "remote" {
     hostname = "app.terraform.io"
     organization = "Sahil123"
     workspaces {
       name = "gh-actions-demo"
     }
+    
+  }
+}*/
+  
+terraform {
+  backend "s3" {
+    bucket = "azure-devops-roche-bucket"
+    key = "main"
+    region = "ap-south-1"
+    dynamodb_table = "Roche_Dynamo_Db_Table
     
   }
 }
