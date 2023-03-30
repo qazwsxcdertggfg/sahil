@@ -12,7 +12,7 @@
 terraform {
   backend "s3" {
     bucket = "azure-devops-roche"
-    key = "main"
+    key = "terraform.tfstate"
     region = "ap-south-1"
     dynamodb_table = "Roche_Dynamo_Db_Table"
     
