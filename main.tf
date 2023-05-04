@@ -9,7 +9,7 @@
   }
 }*/
   
-terraform {
+/*terraform {
   backend "s3" {
     bucket = "azure-devops-roche"
     key = "terraform.tfstate"
@@ -17,7 +17,7 @@ terraform {
     dynamodb_table = "Roche_Dynamo_Db_Table"
     
   }
-}
+}*/
   
   terraform {
   required_providers {
