@@ -14,7 +14,7 @@ terraform {
     bucket = "azure-devops-roche"
     key = "terraform.tfstate"
     region = "ap-south-1"
-    dynamodb_table = "Roche_Dynamo_Db_Table"
+    dynamodb_table = "Roche_Dynamo_Db_Tabl"
     
   }
 }*/
