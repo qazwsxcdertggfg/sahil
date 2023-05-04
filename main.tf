@@ -29,7 +29,7 @@
 }
 
 provider "aws" {
-  /*profile = "default"*/
+  profile = "default"
   region = "ap-south-1"
 }
 
