@@ -20,7 +20,7 @@ jobs:
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run: 
-        shell: 'bash'
+        shell: /bash
       
     
         
@@ -35,11 +35,6 @@ jobs:
         with:
           # terraform_version: 1.4.6
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }} 
-
-       
-      - name: bash
-        shell: bash
-        run: ls -la
 
       - name: Terraform Format
         id: fmt
