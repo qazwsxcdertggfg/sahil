@@ -18,9 +18,9 @@ jobs:
       AWS_REGION: 'ap-south-1'
       
       # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
-    defaults:
-      run: 
-        shell: bash
+    #defaults:
+      #run: 
+       # shell: bash
       
     
         
