@@ -19,8 +19,8 @@ jobs:
       
     #Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
-      run: 
-        shell: bash
+      run:
+        shell: bash  
         
       
     
@@ -92,5 +92,5 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        #run: terraform apply -auto-approve -input=false
-        run: terraform destroy -auto-approve -input=false
+        run: terraform apply -auto-approve -input=false
+        #run: terraform destroy -auto-approve -input=false
