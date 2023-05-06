@@ -35,6 +35,13 @@ jobs:
         with:
           # terraform_version: 1.4.6
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }} 
+          
+          
+        # https://github.com/actions/setup-node
+      - name: Setup Node    
+        uses: actions/setup-node@v2
+        with:
+           node-version: '14'
 
       - name: Terraform Format
         id: fmt
