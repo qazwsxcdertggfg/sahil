@@ -9,6 +9,8 @@ terraform {
   }
 }
   
+#remote backend
+ 
 /*terraform {
   backend "s3" {
     bucket = "azure-devops-roche"
