@@ -9,8 +9,8 @@ on:
 jobs:
   terraform:
     name: "Sahil"
-    #runs-on: windows-latest
-    runs-on: self-hosted
+    runs-on: windows-latest
+    #runs-on: self-hosted
     
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
