@@ -31,8 +31,9 @@
 }
 
 provider "aws" {
-  profile = "sahil"
-  #region = "ap-south-1"
+  AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+  AWS_SECRETS_ACCESS_KEY: ${{secrets.AWS_SECRETS_ACCESS_KEY}}
+  AWS_REGION: ${{secrets.AWS_REGION}}
 }
 
 resource "aws_instance" "vm-web" {
