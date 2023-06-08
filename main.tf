@@ -9,9 +9,9 @@
   }
 }*/
   
-#remote backend
+# Remote Backend
  
-/*terraform {
+terraform {
   backend "s3" {
     bucket = "azure-devops-roche"
     key = "terraform.tfstate"
@@ -19,7 +19,7 @@
     dynamodb_table = "Roche_Dynamo_Db_Table"
     
   }
-}*/
+}
   
   terraform {
   required_providers {
